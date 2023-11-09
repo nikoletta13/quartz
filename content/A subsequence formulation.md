@@ -3,8 +3,8 @@ The statement $S_1$ is the first statement I am looking into, and it can be anal
 > [!note] Definition.
 > **$S_1$: There exists a configuration of the cards that is unwinnable with the alternative ruleset $\cal R'$ and without 10-tricks.**
 
->[!tldr] $\cal R'$
-The ruleset $\cal R '$ dictates that: no cards are drawn to begin with, and a player must play the top card of the deck as drawn. 
+>[!tldr]  The alternative ruleset $\cal R'$
+> The ruleset $\cal R '$ dictates that: no cards are drawn to begin with, and a player must play the top card of the deck as drawn. 
 
 In the end of [[3. Formulations|the discussion on forming simpler questions]], it is explained how $\overline{S_1} \Rightarrow \overline Q$; if a configuration $\cal C$ is winnable under this ruleset, $\cal C$ is winnable with the original ruleset.
 
