@@ -56,7 +56,7 @@ const icons = {
 }
 
 const callouts = {
-  note: myIcon,//icons.pencilIcon,
+  note: icons.myIcon,//icons.pencilIcon,
   abstract: icons.clipboardListIcon,
   info: icons.infoIcon,
   todo: icons.checkCircleIcon,
