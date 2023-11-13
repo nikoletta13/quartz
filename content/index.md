@@ -5,10 +5,10 @@ date: 2023-11-13
 # Are we ever bound to lose the game?
 
 
-### [[#Latest updates|I'm a returning reader, give me the latest updates.]]
+ [[#Latest updates|I'm a returning reader, give me the latest updates.]]
 
 
-### [[#^spiel|I'm a first time reader, give me the spiel.]]
+ [[#^spiel|I'm a first time reader, give me the spiel.]]
 
 
 ![[the-game.png]]
