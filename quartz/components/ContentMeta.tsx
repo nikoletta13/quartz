@@ -14,7 +14,7 @@ export default (() => {
       // }
 
       if (fileData.dates) {
-        const createdDate = formatDate(getDate(cfg, fileData)!)
+        const createdDate = formatDate(fileData.dates.created)
         const modifiedDate = formatDate(fileData.dates.modified) // Assuming fileData contains a 'dates' object with 'modified' property
 
         if (createdDate == modifiedDate){
