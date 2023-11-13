@@ -208,34 +208,34 @@ Algorithm for L(N).
 from math import sqrt
   
 
-def L(N):
+def L(N, description=False):
     M=N
     n = int(sqrt(M-1))
     i = 0
-    
-    print(f'Determine L({N}):')
-    print(f'The greatest integer whose square is less than M-1={M-1} is {n}.')
-    
-    while M>0:
-        print(f'{M} - ({n}+1) = {M-n-1}, so set M to {M-n-1}.')
-        
-        i+=1
-        print(f'At this stage, we have removed the longest subsequence {i} times.')
+    if description:
+        print(f'Determine L({N}):')
+        print(f'The greatest integer whose square is less than M-1={M-1} is {n}.')
 
+    while M>0:
+        if description:
+            print(f'{M} - ({n}+1) = {M-n-1}, so set M to {M-n-1}.')
+        i+=1
+        if description:
+            print(f'At this stage, we have removed the longest subsequence {i} times.')
         M -= n+1
         if M <= n**2:
             n-=1
-        if M>0:    
-            print(f'The greatest integer whose square is less than M-1={M-1} is {n}.')
-            pass
-            
+        if description:    
+            if M>0:    
+                print(f'The greatest integer whose square is less than M-1={M-1} is {n}.')
     return i
 
-N=98
-print(L(N))
+print(L(98), description=True)
 ```
 
-Running this without the `print` statements, just calculates $L(N)$. You can modify this code by changing $N$ on he second to last line to get $L(N)$ for any $N$ you wish. To comment out the print statements insert `#` before `print`, except for the last `print` which just prints out the answer. Running this for $N=98$, gives us that $L(98)=16$. The explanations why are shown below:
+This snippet is taken from [my github folder](https://github.com/nikoletta13/subsequence_algorithms/blob/main/lub_algo.py), which also contains an implementation of the previous algorithm. You can run this without the `description` to simply get the result for any $N$ you are interested in. 
+
+Running this for $N=98$, gives us that $L(98)=16$. The explanations why are shown below:
 
 > [!info]- Explanation for $L(98)=16$
 > The greatest integer whose square is less than M-1=97 is 9.
@@ -335,6 +335,7 @@ Running this without the `print` statements, just calculates $L(N)$. You can mod
 >At this stage, we have removed the longest subsequence 16 times.
 
 >[!note]- Tangent: [[The function L(N)]]
+
 
 This answers the question then, in order for the game under $\cal R'$ to be always winnable, we need at most 16 piles. However, from the statement of the theorem we cannot know how many of these are ascending or descending. Thus the most general answer we can give is 16 ascending and 16 descending piles. These are a lot more piles than just the 2 of the original game! However, $\cal R'$ is a lot more restrictive than $\cal R$ so this is not disheartening. As explained above, this hasn't shown us anything about the truth of $Q$, but we may use this strategy to that end. In conclusion we have shown that
 
