@@ -9,8 +9,19 @@ export default (() => {
       const segments: string[] = []
       const { text: timeTaken, words: _words } = readingTime(text)
 
+      // if (fileData.dates) {
+      //   segments.push(formatDate(getDate(cfg, fileData)!))
+      // }
+
       if (fileData.dates) {
-        segments.push(formatDate(getDate(cfg, fileData)!))
+        const createdDate = formatDate(getDate(cfg, fileData)!)
+        const modifiedDate = formatDate(fileData.dates.modified) // Assuming fileData contains a 'dates' object with 'modified' property
+
+        if (createdDate == modifiedDate){
+          segments.push(formatDate(getDate(cfg, fileData)!))
+        } else{
+          segments.push(`Created: ${createdDate}, Modified: ${modifiedDate}`)
+        }
       }
 
       segments.push(timeTaken)
@@ -28,3 +39,10 @@ export default (() => {
   `
   return ContentMetadata
 }) satisfies QuartzComponentConstructor
+
+
+    //   segments.push(timeTaken)
+    //   return <div className="content-meta">{segments.join(", ")}</div>
+    // } else {
+    //   return null
+    // }

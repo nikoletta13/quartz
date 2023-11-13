@@ -27,7 +27,7 @@ We will be concerned with the 2-player version of this game for which we explain
 Cribbage is a card game involving the whole deck. Points are kept using pegs on a board which is shown in Figure \ref{fig:board}, and the objective of the game is to be the first player to get 121 points, in this case to be the first one to travel beyond the end of the board. One point corresponds to one step pegged on the board. 
 
 
-\includegraphics[scale=0.75,angle=90]{Board}
+![[Board.PNG]]
 
 \caption{An example of the board on which the points cribbage are counted on. Image taken from \texttt{\href{ https://cardgames.io/cribbage/}{cardgames.io}}, where you can also play this game online if no cribbage partners are to be found around. More examples of boards can be found in any website selling them. }\label{fig:board}
 
