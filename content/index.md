@@ -1,11 +1,20 @@
 ---
 title: This Is Also A Game
+date: 2023-11-13
 ---
 # Are we ever bound to lose the game?
 
+
+### [[#Latest updates|I'm a returning reader, give me the latest updates.]]
+
+
+### [[#^spiel|I'm a first time reader, give me the spiel.]]
+
+
 ![[the-game.png]]
 
-**Is there a configuration of the cards that makes it impossible to win?**
+
+**Is there a configuration of the cards that makes it impossible to win?**^spiel
 
 This question concerns the board game known as _The Game_. I was introduced to this game by my friend Albert, and since then it has become a favourite amongst all my friends. This is a cooperative card game, where the players win against the game when all the cards from a deck of 98 cards have been placed into piles, according to the rules of the game. One day after playing the game, I began wondering whether configurations of the deck of cards exist for which it is impossible, no matter how well or badly the players play, to win the game. 
 
@@ -17,5 +26,7 @@ What is presented here is a mental route that I've been following, which is ofte
 If you are a first time visitor, I suggest following the enumerated route first, which will walk you through the basic preliminaries. 
 
 Tangents and definitions exist, around which you can roam freely.
+
+# Latest updates
 
 If you are a returning reader, the latest update is in [[A subsequence formulation]].

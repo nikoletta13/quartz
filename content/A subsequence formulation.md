@@ -1,3 +1,6 @@
+---
+date: 2023-11-09
+---
 The statement $S_1$ is the first statement I am looking into, and it can be analysed by studying appropriate [[Subsequence|subsequences]], as will be demonstrated below. For the sake of completeness, its definition is included here. 
 
 > [!note] Definition.

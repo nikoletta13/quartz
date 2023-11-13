@@ -1,3 +1,6 @@
+---
+date: 2023-11-09
+---
 A quadrilateral is a shape with four edges and four vertices. For example, a square is a quadrilateral, as is a trapezium. 
 
 A _convex_ quadrilateral is one where any line that can be drawn between any two points lying in the quadrilateral is fully contained in the quadrilateral.

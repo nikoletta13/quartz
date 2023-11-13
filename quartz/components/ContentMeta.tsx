@@ -14,7 +14,7 @@ export default (() => {
       // }
 
       if (fileData.dates) {
-        const createdDate =   formatDate(fileData.dates.modified)
+        const createdDate =  (formatDate(getDate(cfg, fileData)!))//formatDate(fileData.dates.modified)
         // const modifiedDate = (formatDate(getDate(cfg, fileData)!))// Assuming fileData contains a 'dates' object with 'modified' property
 
         segments.push(`Last updated: ${createdDate}`)

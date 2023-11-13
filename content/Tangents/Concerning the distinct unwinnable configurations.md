@@ -1,3 +1,6 @@
+---
+date: 2023-11-09
+---
 This tangent came as a result of trying to determine the number of subsequences of a given sequence in [[A subsequence formulation]]. 
 
 Playing around with these sequences in order to find the 'messiest' permutation, it quickly became apparent that since I wasn't looking for increasing (or respectively decreasing) subsequences, I only had to investigate things in one direction, as the other would be the same but 'mirrored'. What I refer to by mirroring here is a highly non-technical way of saying the for the case of $N=4$, for example, I carry out the following mapping:

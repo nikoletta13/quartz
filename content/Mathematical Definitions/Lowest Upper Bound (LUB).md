@@ -1,3 +1,6 @@
+---
+date: 2023-11-09
+---
 This is a straightforward definition, but it may take some thought for it to become immediate and intuitive. As the words say, this is the lowest upper bound. That is, for a collection of numbers (in this case), this number is:
 - an upper bound,
 - the lowest of all the other upper bounds.
