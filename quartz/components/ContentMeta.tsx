@@ -14,14 +14,15 @@ export default (() => {
       // }
 
       if (fileData.dates) {
-        const createdDate = formatDate(fileData.dates.created)
-        const modifiedDate = formatDate(fileData.dates.modified) // Assuming fileData contains a 'dates' object with 'modified' property
+        const createdDate =   formatDate(fileData.dates.modified)
+        // const modifiedDate = (formatDate(getDate(cfg, fileData)!))// Assuming fileData contains a 'dates' object with 'modified' property
 
-        if (createdDate == modifiedDate){
-          segments.push(formatDate(getDate(cfg, fileData)!))
-        } else{
-          segments.push(`Created: ${createdDate}, Modified: ${modifiedDate}`)
-        }
+        segments.push(`Last updated: ${createdDate}`)
+        // if (createdDate == modifiedDate){
+        //   segments.push(formatDate(fileData.dates.modified))
+        // } else{
+        //   segments.push(`Created: ${createdDate}, Modified: ${modifiedDate}`)
+        // }
       }
 
       segments.push(timeTaken)
