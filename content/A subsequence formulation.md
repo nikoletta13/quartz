@@ -38,36 +38,7 @@ The first thing I tried to do to familiarise myself with this question is try ou
 Very quickly we can see that $L(2)=1,\ L(3)=2,\ L(4)=2,\ L(5)=3,\ L(6)=3$.
 
 >[!note]- Tangent: [[Concerning the distinct unwinnable configurations]]
->Playing around with these sequences in order to find the 'messiest' permutation, it quickly became apparent that since I wasn't looking for increasing (or respectively decreasing) subsequences, I only had to investigate things in one direction, as the other would be the same but 'mirrored'. What I refer to by mirroring here is a highly non-technical way of saying the for the case of $N=4$, for example, I carry out the following mapping:
->
->$$1 \to 4$$
->
->$$2\to 3$$
->
->$$3\to 2$$
->
->$$4\to 1$$
->
->This visualisation should make the use of the word mirror more obvious. 
->Then, if I take some sequence $s$ and mirror all its entries to get some other sequence $s'$, then $\sigma(s)=\sigma(s')$.
->This is simply because whatever subsequence was ascending for $s$ will be descending for $s'$, and vice versa. Thus the total number of subsequences is the same, simply of the opposite nature. 
->There is thus an isomorphism, or some correspondence between different elements of $S_N$. To generalise this, let us define the 'mirror' function by
->$$m_N(a) = N-a+1$$
-?for $a = 1,\ldots , N$.
->
->Now, consider the function $M_N$, which takes a sequence $s$ and applies $m_N$ to all its elements. 
->
->Then, if $s$ and $s'$ are any two elements of $S_N$ such that $M_N(s) = s'$, we have that $\sigma(s) = \sigma(s')$.
->
->These are many words to say something very simple. The only reason I've used all these words is to abstractify the thought process, so that it is not case-specific. If it is unclear, consider the following example: let $s = (1,4,2,3), \ s' = (4,1,3,2)$. 
->
->Then apply the mapping mentioned above, and notice that the situation is the same but mirrored. 
->
->Thinking about the mapping $M_N$, we see that it is the inverse of itself, that is if $M_N(s)=s'$, then $M_N(s')=s$. This then implies a lot of nice things, and we quickly see that the total number of distinct cases that need to be compared in order to determine $L(N)$ is $N!/2$. 
->
->While this is not that exciting, it means that if there is one configuration which proves the truth of $S_1$, then it is not unique, or in general, that there must be an even number of them. Even though this also may not seem that enlightening, it gives a hint that if we ever end up with a situation that claims that there exist a unique configuration that shows the truth of $S_1$, this is a contradiction which suggests that either: a) the initial hypothesis that led to that statement is false; b) there is a flaw in the logic that led to this. 
->
->It is not immediate that this property is inherited to the original game, due to the fact that the player's hand is a set, thus the mapping $M_N$ is pointless there. It suggests that some weaker analogue should exist, however. 
+>![[Concerning the distinct unwinnable configurations]]
 
 After the first few small numbers, this becomes computationally a bit difficult and annoying, for a human. I thus decided to ask python to do the hard work for me. This type of task is one I often find very enjoyable, where one has to write concrete logical steps to something that may not be typically broken down in that way in our thoughtscape. After getting some code to do the hard work, it became apparent that this would soon also become computationally expensive for a computer. This is quite obvious, as there are $N!/2$ combinations to check to determine the maximum, and this is a quantity that grows incredibly rapidly with increasing $N$. 
 
@@ -147,9 +118,7 @@ This result can be generalised as follows:
 _If a sequence $s$ is at least of length $lm+1$ for some $l,m$, then there exists a monotonically increasing subsequence of length $l+1$ or a monotonically decreasing subsequence of length $l+1$ in $s$._
 
 >[!note]- Tangent: [[The happy ending problem and a mathematician's mating ritual]].
-> The Erdős-Szekeres Theorem is proved in the 1935 paper of Erdős and Szekeres which concerns what was later coined the "happy ending problem" by Erdős. The story is as follows:
-> 
-> Erdős and Szekeres were part of a group of Hungarians who discussed mathematical problems amongst them. Another member was Klein, who proposed the following problem: Any set of 5 points on the plane has a subset of 4 points that form the vertices of a [[Convex quadrilateral|convex quadrilateral]]. Szekeres then wanted to solve this problem to impress Klein. He eventually did so along with Erdős, and the rumour is that after that Klein was indeed impressed. Erdős then named this problem the "happy ending" problem, as he claims it is what led to Klein and Szekeres getting married. The marriage of the two was reportedly a very happy one, and they were together for pretty much the rest of their (long) lives, as they died within an hour of each other in their 90's. 
+> ![[The happy ending problem and a mathematician's mating ritual]]
 
 There exists a simple and easy to understand proof of this statement that requires hardly any mathematical knowledge, which I will present here in slightly more detail in hope that it is widely accessible. This is taken from the 1-page paper by A. Seidenberg, [A simple proof of the Erdős-Szekeres Theorem](https://academic.oup.com/jlms/article-abstract/s1-34/3/352/847946). (Much like _The Game_, this paper does exactly what it says on the tin.) 
 
@@ -337,7 +306,8 @@ Running this for $N=98$, gives us that $L(98)=16$. The explanations why are show
 >
 >At this stage, we have removed the longest subsequence 16 times.
 
->[!note]- Tangent: [[The function L(N)]]
+>[!note]- Tangent:  [[The function L(N)]]
+>![[The function L(N)]]
 
 
 This answers the question then, in order for the game under $\cal R'$ to be always winnable, we need at most 16 piles. However, from the statement of the theorem we cannot know how many of these are ascending or descending. Thus the most general answer we can give is 16 ascending and 16 descending piles. These are a lot more piles than just the 2 of the original game! However, $\cal R'$ is a lot more restrictive than $\cal R$ so this is not disheartening. As explained above, this hasn't shown us anything about the truth of $Q$, but we may use this strategy to that end. In conclusion we have shown that
