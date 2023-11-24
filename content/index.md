@@ -1,6 +1,6 @@
 ---
 title: This Is Also A Game
-date: 2023-11-13
+date: 2023-11-24
 ---
 # Are we ever bound to lose the game?
 
