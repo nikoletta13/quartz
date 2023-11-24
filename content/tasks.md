@@ -1,0 +1,9 @@
+- [x] edit code to create figure env
+- [ ] Cribbage
+	- [x] finish code to produce figures
+	- [ ] finish code to give p values and means and all sorts of statistics
+	- [ ] finish writeup
+- [ ] The story so far with no maths
+- [ ] Performance of Knuth algorithm
+- [ ] Teach AI to play the game 
+	- [ ] Tangent: learn how to teach how to learn

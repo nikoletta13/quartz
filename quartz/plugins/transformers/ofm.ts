@@ -56,6 +56,7 @@ const icons = {
 }
 
 const callouts = {
+  // figure: icons.myIcon,
   note: icons.myIcon,//icons.pencilIcon,
   abstract: icons.clipboardListIcon,
   info: icons.infoIcon,
@@ -68,7 +69,7 @@ const callouts = {
   danger: icons.zapIcon,
   bug: icons.bugIcon,
   example: icons.listIcon,
-  quote: icons.quoteIcon,
+  quote: icons.myIcon, //icons.quoteIcon,
 }
 
 const calloutMapping: Record<string, keyof typeof callouts> = {
@@ -99,6 +100,7 @@ const calloutMapping: Record<string, keyof typeof callouts> = {
   example: "example",
   quote: "quote",
   cite: "quote",
+  figure: "quote"
 }
 
 function canonicalizeCallout(calloutName: string): keyof typeof callouts {
